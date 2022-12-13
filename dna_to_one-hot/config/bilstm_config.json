@@ -1,0 +1,29 @@
+{
+  "model_name": "bilstm",
+  "epochs": 200,
+  "random_state": 1,
+  "test_size": 0.2,
+  "vocab_size": 4,
+  "checkpoint_every": 100,
+  "eval_every": 100,
+  "learning_rate": 1e-3,
+  "optimization": "adam",
+  "embedding_size": 4,
+  "hidden_sizes": [
+    256
+  ],
+  "sequence_length": 1000,
+  "batch_size": 256,
+  "num_classes": 1,
+  "keep_prob": 0.5,
+  "l2_reg_lambda": 0.0,
+  "max_grad_norm": 5.0,
+  "train_data": "C:\\Users\\lie\\Desktop\\trans-for_seqs\\text_classifier\\data\\mydata\\seq_train_kmer.txt",
+  "eval_data": "text_classifier\\data\\mydata\\seq_test_kmer.txt",
+  "stop_word": null,
+  "output_path": "outputs/transformer",
+  "word_vectors_path": "w2v/kmer_seqs_w63910_v200.bin",
+  "ckpt_model_path": "ckpt_model/imdb/transformer",
+  "pb_model_path": "pb_model/imdb/transformer",
+  "data_path": "C:\\Users\\lie\\Desktop\\one-hot-trans\\data\\quality_ncbi_with_all_labels.csv"
+}
